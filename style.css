@@ -1,0 +1,262 @@
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+.page {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: Verdana, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.page__content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  grid-template-columns: 440px 1fr 440px;
+  grid-template-areas: 
+  "difficulty difficulty difficulty"
+  "ancients stat cards"
+  "ancients . cards";
+  gap: 10px;
+  height: 100vh;
+  box-sizing: border-box;
+  background-image: url("./assets/home.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: black;
+}
+
+.page__footer {
+  position: relative;
+  bottom: 0;
+  right: 0;
+}
+
+.ancients-selector {
+  display: none;
+  padding-left: 20px;
+  grid-area: ancients;
+}
+
+.ancients-selector--enabled {
+  display: block;
+}
+
+.ancients-selector__list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  
+}
+
+.ancients-selector__item {
+  position: absolute;
+  bottom: 0;
+  border: 2px solid rgba(255, 255, 255, 0.15);;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.ancients-selector__item--active {
+  z-index: 1;
+  outline: 5px solid white;
+}
+
+.difficulty-level {
+  grid-area: difficulty;
+}
+
+.difficulty-level__list {
+  margin: 0;
+  padding: 5px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  list-style-type: none;
+
+}
+
+.button {
+  background-color: transparent;
+  font-family: inherit;
+  color: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+.button:hover {
+  background-color: rgba(255, 255, 255, 0.75);
+  color: black;
+  transition: 0.3s;
+}
+
+.difficulty-level__button {
+  padding: 10px 25px;
+  border-radius: 6px;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+.difficulty-level__button--active {
+  background-color: rgba(255, 255, 255, 0.75);
+  border: 2px solid rgba(255, 255, 255, 0.0);
+  color: black;
+  transition: 0.3s;
+}
+
+.player-card-deck {
+  /* justify-self: end; */
+  padding-right: 20px;
+  height: 100%;
+  grid-area: cards;
+}
+
+.player-card-deck__list {
+  position: relative;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.player-card-deck__item {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border: 2px solid rgba(255, 255, 255, 0.15);;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.stage {
+  padding: 15px;
+  border: 2px solid white;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.stage__container {
+  display: flex;
+  gap: 10px;
+}
+
+.stage__title {
+  margin: 0;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.player-card-deck-stat {
+  display: none;
+  justify-self: stretch;
+  justify-content: center;
+  gap: 10px;
+  grid-area: stat;
+}
+
+.player-card-deck-stat--enabled {
+  display: flex;
+}
+
+.card-stat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.card-stat--green {
+  background-color: green;
+}
+.card-stat--brown {
+  background-color: brown;
+}
+.card-stat--blue {
+  background-color: blue;
+}
+
+
+
+.start-game-button {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 150px;
+  height: 50px;
+  margin: auto;
+  display: none;
+  border-radius: 6px;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+.start-game-button--active {
+  display: block;
+}
+
+.student-links {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 5px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.student-links__student-link {
+  opacity: 0.8;
+  cursor: pointer;
+  transition: opacity .3s;
+}
+
+.student-links__student-link:hover {
+  opacity: 1;
+}
+
+.student-work-date {
+  font-size: 20px;
+  line-height: 20px;
+  opacity: 0.8;
+  color: white;
+}
+
+.footer {
+  position: relative;
+}

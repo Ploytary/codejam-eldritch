@@ -1,0 +1,16 @@
+{
+  "name": "no-name",
+  "private": true,
+  "description": "no-desc",
+  "type": "module",
+  "devDependencies": {
+  },
+  "scripts": {
+  },
+  "browserslist": [
+  ],
+  "editorconfig-cli": [
+  ],
+  "engines": {
+  }
+}

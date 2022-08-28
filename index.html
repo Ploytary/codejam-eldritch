@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+<body class="page">
+  <header class="page__header">
+    <h1 class="page__title visually-hidden">Stage0 last task</h1>
+  </header>
+  <main class="page__content">
+    <section class="difficulty-level">
+      <ul class="difficulty-level__list">
+      </ul>
+    </section>
+    <button class="start-game-button button">Замешать</button>
+    <section class="ancients-selector">
+      <ul class="ancients-selector__list">
+      </ul>
+    </section>
+    <section class="player-card-deck">
+      <ul class="player-card-deck__list">
+        <li class="player-card-deck__item"></li>
+        <li class="player-card-deck__item"></li>
+        <li class="player-card-deck__item"></li>
+      </ul>
+    </section>
+    <section class="player-card-deck-stat"> <!--player-card-deck-stat--enabled-->
+      <div class="player-card-deck-stat__first-stage stage stage--done" data-stage="firstStage">
+        <p class="stage__title">First stage</p>
+        <div class="stage__container">
+          <span class="stage__green-card card-stat card-stat--green" data-color="green"></span>
+          <span class="stage__brown-card card-stat card-stat--brown" data-color="brown"></span>
+          <span class="stage__blue-card card-stat card-stat--blue" data-color="blue"></span>
+        </div>
+      </div>
+      <div class="player-card-deck-stat__second-stage stage" data-stage="secondStage">
+        <p class="stage__title">Second stage</p>
+        <div class="stage__container">
+          <span class="stage__green-card card-stat card-stat--green" data-color="green"></span>
+          <span class="stage__brown-card card-stat card-stat--brown" data-color="brown"></span>
+          <span class="stage__blue-card card-stat card-stat--blue" data-color="blue"></span>
+        </div>
+      </div>
+      <div class="player-card-deck-stat__third-stage stage" data-stage="thirdStage">
+        <p class="stage__title">Third stage</p>
+        <div class="stage__container">
+          <span class="stage__green-card card-stat card-stat--green" data-color="green"></span>
+          <span class="stage__brown-card card-stat card-stat--brown" data-color="brown"></span>
+          <span class="stage__blue-card card-stat card-stat--blue" data-color="blue"></span>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="page__footer">
+    <ul class="student-links">
+      <li class="student-links__item">
+        <p class="student-work-date">2022</p>
+      </li>
+      <li class="student-links__item">
+        <a class="student-links__student-link" href="https://github.com/Ploytary"><img src="./img/icons/logo-github.svg" alt="GutHub link." width="30" height="30"></a>
+      </li>
+      <li class="student-links__item">
+        <a class="student-links__student-link" href="https://rs.school/js/"><img src="./img/icons/logo-rs_school_js.svg" alt="RS School link." height="30"></a>
+      </li>
+    </ul>
+  </footer>
+<script src="./main.js" type="module"></script>
+</body>
+</html>
